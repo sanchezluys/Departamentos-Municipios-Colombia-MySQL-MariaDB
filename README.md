@@ -68,4 +68,12 @@ JOIN departamentos d ON m.id_departamento = d.id_departamento
 WHERE d.nombre = 'Antioquia';
 ```	
 
+### Departamentos
+
+![departamentos](img/dep_1.png)
+
+### Municipios
+
+![municipios](img/mun_1.png)
+
 😊 ¡Disfruta explorando la base de datos! 🎉
