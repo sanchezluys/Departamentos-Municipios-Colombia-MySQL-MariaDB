@@ -22,17 +22,16 @@
 | Campo         | Tipo de Datos | Descripción                   |
 |---------------|---------------|-------------------------------|
 | `id_departamento` | `int`       | ID único del departamento    |
-| `nombre`       | `varchar(50)` | Nombre del departamento       |
-| `codigo_dane`  | `varchar(10)` | Código DANE del departamento  |
+| `departamento`       | `varchar(255)` | Nombre del departamento       |
 
 ###### 2. 🏙️ municipios
 
 | Campo         | Tipo de Datos | Descripción                   |
 |---------------|---------------|-------------------------------|
 | `id_municipio` | `int`       | ID único del municipio        |
-| `nombre`       | `varchar(100)`| Nombre del municipio          |
-| `id_departamento`| `int`       | ID del departamento al que pertenece |
-| `codigo_dane`  | `varchar(10)` | Código DANE del municipio     |
+| `municipio`       | `varchar(255)`| Nombre del municipio          |
+| `estado`       | `int`| Estado, 1:activo          |
+| `departamento_id`| `int`       | ID del departamento al que pertenece |
 
 ##### 3. 🔗 Relaciones
 - Un departamento puede tener múltiples municipios (One-To-Many): departamentos.id_departamento = municipios.id_departamento 👫
